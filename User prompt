@@ -2,25 +2,18 @@
 
 int main() {
     float height, weight;
-    char phone[20];
+    char phone[15];
 
-    // Prompt for height
-    printf("Enter your height (in meters): ");
+    printf("Enter height (m): ");
     scanf("%f", &height);
 
-    // Prompt for phone number
-    printf("Enter your phone number: ");
-    scanf("%s", phone);  // Note: Assumes phone number has no spaces
+    printf("Enter phone number: ");
+    scanf("%s", phone);
 
-    // Prompt for weight
-    printf("Enter your weight (in kilograms): ");
+    printf("Enter weight (kg): ");
     scanf("%f", &weight);
 
-    // Display the collected information
-    printf("\n--- Your Information ---\n");
-    printf("Height: %.2f meters\n", height);
-    printf("Phone Number: %s\n", phone);
-    printf("Weight: %.2f kg\n", weight);
+    printf("\nHeight: %.2f m\nPhone: %s\nWeight: %.2f kg\n", height, phone, weight);
 
     return 0;
 }

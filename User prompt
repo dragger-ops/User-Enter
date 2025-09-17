@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    char name[50];
-    int age;
+    float height, weight;
+    char phone[20];
 
-    // Prompt for name
-    printf("Enter your name: ");
-    scanf("%s", name);  // Note: This reads only one word (no spaces)
+    // Prompt for height
+    printf("Enter your height (in meters): ");
+    scanf("%f", &height);
 
-    // Prompt for age
-    printf("Enter your age: ");
-    scanf("%d", &age);
+    // Prompt for phone number
+    printf("Enter your phone number: ");
+    scanf("%s", phone);  // Note: Assumes phone number has no spaces
 
-    // Output a greeting
-    printf("Hello, %s! You are %d years old.\n", name, age);
+    // Prompt for weight
+    printf("Enter your weight (in kilograms): ");
+    scanf("%f", &weight);
+
+    // Display the collected information
+    printf("\n--- Your Information ---\n");
+    printf("Height: %.2f meters\n", height);
+    printf("Phone Number: %s\n", phone);
+    printf("Weight: %.2f kg\n", weight);
 
     return 0;
 }

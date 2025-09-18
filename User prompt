@@ -16,4 +16,4 @@ int main() {
     printf("\nHeight: %.2f m\nPhone: %s\nWeight: %.2f kg\n", height, phone, weight);
 
     return 0;
-}
+} 

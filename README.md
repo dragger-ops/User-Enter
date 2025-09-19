@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float height, weight;
+    char phone[15];
+
+    printf("Enter height (m): ");
+    scanf("%f", &height);
+
+    printf("Enter phone number: ");
+    scanf("%s", phone);
+
+    printf("Enter weight (kg): ");
+    scanf("%f", &weight);
+
+    printf("\nHeight: %.2f m\nPhone: %s\nWeight: %.2f kg\n", height, phone, weight);
+
+    return 0;
+} 
